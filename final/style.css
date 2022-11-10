@@ -1,3 +1,12 @@
+@font-face {
+    font-family: IMFell;
+    src: url('IM_Fell_English/IMFellEnglish-Regular.ttf');
+}
+
+*{
+    margin: 0;
+}
+
 h1 { 
     color: black; 
 }
@@ -10,9 +19,182 @@ h1 {
 
 .nav-container{
     background-color: #322D2D;
-    height: 8rem;
+    height: 7rem;
 }
 
-.recipe-details-image{
-    width: 30%;
+.navbar-logo{
+    display: inline-block;
 }
+
+.navbar-logo-v2{
+    color: white;
+    font-family: IMFell;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+}
+
+.nav-link-container{
+    margin-right: 2rem;
+    margin-top: 3rem;
+    float: right;
+}
+
+.nav-link{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
+    display: inline-block;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    color: #FFC876;
+    transition: ease-in, 0.2s;
+}
+
+.ingredients-title{
+    font-family: IMFell;
+}
+
+.ingredients-list{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2rem;
+    list-style: none;
+}
+
+.recipe-details-title{
+    font-family: IMFell;
+    font-size: 2.8rem;
+    margin-top: 5rem;
+}
+
+
+.recipe-details-intro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+
+.recipe-details-subtitle{
+    font-family: IMFell;
+    font-size: 1.8rem;
+}
+
+
+.recipe-details-instructions{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.7rem;
+   
+}
+
+.footer{
+    height: 8rem;
+    margin-top: 4rem;
+}
+
+.footer_credits{
+    color: #3c3b3b;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    
+}
+
+
+@media all and (min-width: 900px) { 
+    .row{
+        display: flex;
+    }
+
+    .column{
+        flex: 50%;
+        margin: 0 4rem;
+    }
+    
+    .ingredients-title{
+        font-size:1.8rem;
+        margin: 2rem 2rem 1rem 2rem;
+    }
+
+    .recipe-details-instructions{
+        margin-bottom: 4rem;
+        margin-right: 2rem;
+    }
+
+    .recipe-details-image{
+        margin-top: 5rem;
+        width: 90%;
+        padding-left: 2rem;
+    }
+
+    .recipe-details-title{
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+
+    .recipe-details-intro{
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    
+    }
+
+    
+}
+
+@media all and (max-width: 900px) { 
+    .row{
+    }
+    
+    .column{
+        width: 100%;
+    }
+
+    .ingredients-title{
+        font-size:1.8rem;
+        margin: 2rem 2rem 1rem 2rem;
+    }
+
+    .recipe-details-instructions{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 1rem 2rem 3rem 2rem;
+    }
+
+    .recipe-details-subtitle{
+        font-size: 1.5rem;
+        margin: 1rem 2rem 0 2rem;
+    }
+
+    .recipe-details-image{
+        display: block;
+        margin-top: 5rem;
+        width:60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .recipe-details-title{
+        font-size: 2rem;
+        margin: 2rem 2rem; 
+    }
+
+    .recipe-details-intro{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin: 2rem 2rem;
+    
+    }
+}
+
