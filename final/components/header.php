@@ -12,3 +12,13 @@
 <body>
 
 <!-- Main Content Starts Here -->
+
+<div class="header_wrapper">
+    <?php echo "Culinary"; ?>
+
+    <a> All Recipes</a>
+    <a> Log In </a>
+
+</div>
+
+

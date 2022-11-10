@@ -1,3 +1,18 @@
 h1 { 
     color: black; 
 }
+
+.header_wrapper{
+    background-color: #322D2D;
+    height: 10rem;
+    
+}
+
+.nav-container{
+    background-color: #322D2D;
+    height: 8rem;
+}
+
+.recipe-details-image{
+    width: 30%;
+}
