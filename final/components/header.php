@@ -24,19 +24,17 @@ $document_title = $page_title . ' | ' . $site_title;
  
     <!--Main Content Begins-->
     <div class="header-container">
-      <div class="logo-container">
-          <!-- <img src="imgs/logo3.png" id="logo" class="center " alt=""> -->
-          <h1 id="logo">
-              Culinary
-          </h1>
-      </div>
+      
 
       <div class="nav-container">
-          <ul id="navbar">
-              <li><a href="<?php echo site_url(); ?>/index.php">Home</a></li>
-              <li><a href="#">All Recipes</a></li>
-              <!-- <li><a href="#">Login</a></li> -->
-              <li><a href="<?php echo site_url(); ?>/admin/recipes/index.php">Admin</a></li>
-          </ul>
+        <div class="logo-container">
+            <a href="<?php echo site_url(); ?>/index.php" class="logo"> Culinary </a>
+        </div>
+            
+        <ul id="navbar" class="navbar">
+            <li><a href="<?php echo site_url(); ?>/admin/recipes/index.php" class="nav-link">Admin</a></li>
+            <li><a href="#" class="nav-link">All Recipes</a></li>
+            <!-- <li><a href="#">Login</a></li> -->
+        </ul>
       </div>
     <div>

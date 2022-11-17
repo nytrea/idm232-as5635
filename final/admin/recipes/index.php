@@ -13,8 +13,6 @@ $result = mysqli_query($db_connection, $query);
 ?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">
-
-
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
@@ -23,8 +21,7 @@ $result = mysqli_query($db_connection, $query);
         <?php
           if (isset($_GET['error'])) {
               echo "<p class='text-red-500'>Error: " . $_GET['error'] . '</p>';
-          }
-?>
+          }?>
 
       </div>
       <div class="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
