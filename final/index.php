@@ -1,24 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Culinary</title>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+include_once __DIR__ . '/app.php';
+$page_title = 'Home';
 
-<?php include 'components/header.php'; ?> 
+include_once __DIR__ . '/components/header.php'; ?>
 
-<?php $title = 'Assignment - 01'; ?> 
+    <div class="banner-container"> 
+    </div>
 
-    
-<h1><?php echo $title;?></h1>
-<?php include 'components/footer.php'; ?> 
+    <div class="categories-container">
+        <?php $title = 'Categories';?>
+            <h3>Appetizers</h3>
+            <h3>Breakfast</h3>
+            <h3>Lunch</h3>
+            <h3>Dinner</h3>
+    </div>
+
+<?php include_once __DIR__ . '/components/footer.php'; ?>
 
 
 <!-- make a folder called components in final folder and make a footer.php file and a header.php file -->

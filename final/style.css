@@ -35,6 +35,13 @@ h1 {
     margin-left: 3rem;
 }
 
+.cauldron-logo{
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .nav-link-container{
     margin-right: 2rem;
     margin-top: 3rem;
