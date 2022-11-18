@@ -17,3 +17,5 @@ if ($result) {
     $error_message = 'Could Not Delete Recipe';
     redirect_to('/admin/recipes?error=' . $error_message);
 }
+
+?>

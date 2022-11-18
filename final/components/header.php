@@ -24,8 +24,6 @@ $document_title = $page_title . ' | ' . $site_title;
  
     <!--Main Content Begins-->
     <div class="header-container">
-      
-
       <div class="nav-container">
         <div class="logo-container">
             <a href="<?php echo site_url(); ?>/index.php" class="logo"> Culinary </a>

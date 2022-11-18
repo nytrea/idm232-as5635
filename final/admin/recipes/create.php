@@ -56,4 +56,4 @@ $result = mysqli_query($db_connection, $query);
 
 
 
-<?php include_once __DIR__ . '/../../components/footer.php';
+<?php include_once __DIR__ . '/../../components/footer.php'; ?>

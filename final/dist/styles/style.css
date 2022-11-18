@@ -127,42 +127,46 @@ table {
 
 @font-face {
   font-family: 'Inter';
-  src: url('fonts/Inter/Inter');
+  src: url('../fonts/Inter/Inter.ttf');
 }
 
 
 @font-face {
   font-family: 'IM-Fell';
-  src: url('./fonts/IM_Fell_English/IMFellEnglish-Regular');
+  src: url('../fonts/IM_Fell_English/IMFellEnglish-Regular.ttf');
 }
 
 .nav-container{
   background-color: #322D2D;
   height: 6rem;
-}
-
-.logo-container{
+  padding-top: 3rem;
+  overflow: auto;
 }
 
 .logo{
   font-family: 'IM-Fell', Verdana;
   color: white;
   text-decoration: none;
-  font-size: 2rem;
-  padding-left: 2rem;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+}
+
+.navbar{
+  float: right;
+  margin-right: 4rem;
 }
 
 .nav-link{
   font-family: 'Inter', Verdana;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  display: inline-block;
-
+  font-size: 1.2rem;
 }
 
-.navbar{
+.nav-link:hover{
+  color: rgb(248, 194, 79);
+  transition: ease-in, 0.2s;
 }
-
 
 ul{
   list-style: none;
@@ -171,5 +175,4 @@ ul{
 li{
   display: inline;
   padding: 1rem;
-  float: right;
 }
