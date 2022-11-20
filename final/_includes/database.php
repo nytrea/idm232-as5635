@@ -7,7 +7,7 @@ $db_name = $APP_CONFIG['database_name'];
 
 // Create a database connection with correct credentials
 $db_connection = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-//5K8;G,?RqO#N
+
 // Check the connection is good with no errors
 if (mysqli_connect_errno()) {
     die('Database connection failed: ' .
