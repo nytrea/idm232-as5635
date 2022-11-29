@@ -1,5 +1,4 @@
 <?php
-
 include_once __DIR__ . '/../../app.php';
 $page_title = 'All Recipes';
 include_once __DIR__ . '/../../components/header.php';
@@ -9,7 +8,6 @@ include_once __DIR__ . '/../../components/header.php';
 // get users data from database
 $query = 'SELECT * FROM recipes';
 $result = mysqli_query($db_connection, $query);
-
 ?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">
@@ -17,7 +15,8 @@ $result = mysqli_query($db_connection, $query);
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
         <h1 class="text-xl font-semibold text-gray-900">Recipes</h1>
-      
+
+
         <?php
           if (isset($_GET['error'])) {
               echo "<p class='text-red-500'>Error: " . $_GET['error'] . '</p>';

@@ -32,6 +32,7 @@ $document_title = $page_title . ' | ' . $site_title;
         <ul id="navbar" class="navbar">
             <li><a href="<?php echo site_url(); ?>/admin/recipes/index.php" class="nav-link">Admin</a></li>
             <li><a href="#" class="nav-link">All Recipes</a></li>
+            <li><a href="<?php echo site_url(); ?>/admin/search/index.php" class="nav-link">Search</a></li>
             <!-- <li><a href="#">Login</a></li> -->
         </ul>
       </div>
