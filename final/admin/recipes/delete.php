@@ -14,11 +14,7 @@ $result = mysqli_query($db_connection, $query);
 if ($result) {
     redirect_to('/admin/recipes');
 } else {
-<<<<<<< HEAD
     $error_message = 'Could Not Delete Recipe'. mysqli_error($db_connection);
-=======
-    $error_message = 'Could Not Delete Recipe';
->>>>>>> 69870d84bd7d63eb134ef576260c218ea959f6c3
     redirect_to('/admin/recipes?error=' . $error_message);
 }
 

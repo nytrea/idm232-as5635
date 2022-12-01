@@ -52,13 +52,8 @@ $result = mysqli_query($db_connection, $query);
         echo "<tr>
                 <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$recipes['recipe_title']}</td>
                 <td class='relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6'>
-<<<<<<< HEAD
                   <a href='https://nytrea.com/idm232/final/admin/recipes/edit.php?id={$recipes['id']}' >Edit</a>
                   <a href='https://nytrea.com/idm232/final/admin/recipes/delete.php?id={$recipes['id']}' >Delete</a>
-=======
-                  <a href='http://localhost:8888/final/admin/recipes/edit.php?id={$recipes['id']}' >Edit</a>
-                  <a href='http://localhost:8888/final/admin/recipes/delete.php?id={$recipes['id']}' >Delete</a>
->>>>>>> 69870d84bd7d63eb134ef576260c218ea959f6c3
                 </td>
               </tr>";
     }
