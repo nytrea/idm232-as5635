@@ -4,6 +4,7 @@ include_once __DIR__ . '/../../app.php';
 $page_title = 'Create Recipes';
 include_once __DIR__ . '/../../components/header.php';
 ?>
+<link rel="stylesheet" href=" <?php echo site_url(); ?>/dist/styles/style.css">
 
 <?php
 // get users data from database
@@ -15,8 +16,8 @@ $result = mysqli_query($db_connection, $query);
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
-      <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Create Recipe</h1>
+      <div class="create-recipe-title-container">
+        <h1 class="create-recipe-title">Create Recipe</h1>
       </div>
     </div>
     <div class="mt-8 flex flex-col">

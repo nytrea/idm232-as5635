@@ -9,12 +9,14 @@ if (isset($_GET['search'])) {
 } else {
   $search = '';
 }
+// $search = 'chicken';
 
 $query = 'SELECT *';
 $query .= ' FROM recipes';
 $query .= " WHERE recipe_title LIKE '%{$search}%'";
 $query .= " OR ingredients LIKE '%{$search}%'";
-$query .= " OR steps LIKE '%{$search}%'";
+$query .= " OR instructions LIKE '%{$search}%' ";
+
 $results = mysqli_query($db_connection, $query);
 
 // Check if was have more than 0 results from db

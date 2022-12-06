@@ -7,7 +7,7 @@
 function get_recipes()
 {
     global $db_connection;
-    $query = 'SELECT * FROM recipes';
+    $query = 'SELECT * FROM recipes ORDER BY title ASC';
     $result = mysqli_query($db_connection, $query);
     return $result;
 }
@@ -27,7 +27,6 @@ function add_recipe($recipe_title, $introduction, $image, $ingredients, $instruc
     $query = 'INSERT INTO recipes';
     $query .= ' (recipe_title, image_path_small, image_path_large, ingredients, instructions)';
     $query .= " VALUES ('$recipe_title', '$image', '$ingredients', '$instructions')";
-
     $result = mysqli_query($db_connection, $query);
     return $result;
 }

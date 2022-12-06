@@ -1,7 +1,7 @@
   <footer class="bg-white">
-    <div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
+    <div class="footer-container">
      
-      <p class="mt-8 text-center text-base text-gray-400">&copy;
+      <p class="footer-copyright-txt">&copy;
         <?php echo date('Y'); ?> IDM 232. All rights reserved. 
       </p>
     </div>

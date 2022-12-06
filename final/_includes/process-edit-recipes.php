@@ -6,11 +6,11 @@ if (!$_POST) {
 }
 
 // Store $_POST data to variables for readability
-$recipe_title_value = $_POST['recipe_title'];
-$introduction_value = $_POST['introduction'];
-$ingredients_value = $_POST['ingredients'];
-$instructions_value = $_POST['instructions'];
-$id_value = $_POST['id'];
+$recipe_title_value = sanitize_value($_POST['recipe_title']);
+$introduction_value = sanitize_value($_POST['introduction']);
+$ingredients_value = sanitize_value($_POST['ingredients']);
+$instructions_value = sanitize_value($_POST['instructions']);
+$id_value = sanitize_value($_POST['id']);
 
 // Create a SQL statement to insert the data into the database
 $query = "UPDATE recipes SET 
