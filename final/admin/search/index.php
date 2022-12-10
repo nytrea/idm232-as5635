@@ -2,7 +2,9 @@
 include_once __DIR__ . '/../../app.php';
 $page_title = 'Search';
 include_once __DIR__ . '/../../components/header.php';
+
 //$recipes = get_recipes();
+
 
 if (isset($_GET['search'])) {
   $search = $_GET['search'];
@@ -27,18 +29,24 @@ if ($results->num_rows > 0) {
 }
 ?> 
 
+<?php
+$site_title = 'Search Recipes';
+$document_title = $page_title . ' | ' . $site_title; 
+?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="text-xl font-semibold text-gray-900">Search Results</h1>
+        <h1 class="search-results-title">Search Recipes</h1>
         <form action="<?php echo site_url(); ?>/admin/search" method="GET">
-          <input class=" border-black border-2" type="text" name="search" id="search" placeholder="Search"
-            value="<?php echo $search; ?>">
-          <button type="submit">Search</button>
+          <div class="search-bar-container">
+            <input class="search-bar" type="text" name="search" id="search" placeholder="Search"
+              value="<?php echo $search; ?>">
+            <button class="search-bar-submit-btn" type="submit">Search</button>
+          </div>
+          
         </form>
-        <h2>You searched for "<?php echo $search; ?>"</h2>
         <?php
         // If no results, echo no results
         if (!$recipes_results) {

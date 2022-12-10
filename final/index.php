@@ -8,13 +8,13 @@ include_once __DIR__ . '/components/header.php'; ?>
     <div class="banner-container"> 
     </div>
 
-    <div class="categories-container">
-        <?php $title = 'Categories';?>
-            <h3 class='category-subtitle'>Appetizers</h3>
-            <h3>Breakfast</h3>
-            <h3>Lunch</h3>
-            <h3>Dinner</h3>
-            
+    <div class="hero-container">
+        <img src='dist/Hero.jpg'/>
+        <h2 class='homepage-tagline'> A Recipe For Every Craving  </h2>
+        <h3 class='homepage-tagline-02'> Not Sure What to Make Today? </h3>
+        <a class="homepage-recipes-btn-container" href="<?php echo site_url(); ?>/all-recipes.php" style="text-decoration: none;">
+            <button class="homepage-recipes-btn">Find A Recipe</button>
+          </a>
     </div>
 
 <?php include_once __DIR__ . '/components/footer.php'; ?>

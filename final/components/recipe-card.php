@@ -1,22 +1,27 @@
 <?php
 // get users data from database
-$query = 'SELECT * FROM recipes';
-$result = mysqli_query($db_connection, $query);
+// $query = 'SELECT * FROM recipes';
+// $result = mysqli_query($db_connection, $query);
 ?>
-
-<title><?php echo $document_title ; ?> </title>
-
-
     <!--Main Content Begins-->
-    <div class="recipe-card-container">
-      <div class="image-container">
-      </div>
       <?php
+        $site_url = site_url();
         while ($recipes = mysqli_fetch_array($result)) {
+          
           echo "
-            <div class='text-container'>
-              <h1 class='recipe-card-title'> {$recipes['recipe_title']} </h1>
-            </div> ";
-        }
+          <a href='{$site_url}/recipe.php?id={$recipes['id']}'>
+            <div class='recipe-card-container'>
+                <div class='image-container'>
+                  <img class='recipe-image' src='{$site_url}/{$recipes['image']}'>
+                </div>
+
+                <div class='text-container'>
+                  <h1 class='recipe-card-title'> {$recipes['recipe_title']} </h1>
+                </div> 
+
+              </div>
+          </a>
+            ";
+          }
       ?>
-    <div>
+   

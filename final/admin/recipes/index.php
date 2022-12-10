@@ -1,12 +1,12 @@
 <?php
 include_once __DIR__ . '/../../app.php';
-$page_title = 'All Recipes';
+$page_title = 'Admin';
 include_once __DIR__ . '/../../components/header.php';
 ?>
 
 <?php
 // get users data from database
-$query = 'SELECT * FROM recipes';
+$query = 'SELECT * FROM recipes ORDER BY recipe_title ASC';
 $result = mysqli_query($db_connection, $query);
 ?>
 
@@ -36,7 +36,7 @@ $result = mysqli_query($db_connection, $query);
                 <?php
                   while ($recipes = mysqli_fetch_array($result)) {
                     echo "<tr class='table-recipe-container'>
-                            <td class='whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6'>{$recipes['recipe_title']}</td>
+                            <td class='table-recipe-title'>{$recipes['recipe_title']}</td>
                             <td class='table-lines'>
                               <a class='edit-btn' href='https://nytrea.com/idm232/final/admin/recipes/edit.php?id={$recipes['id']}' >Edit</a>
                               <a class='delete-btn' href='https://nytrea.com/idm232/final/admin/recipes/delete.php?id={$recipes['id']}' >Delete</a>

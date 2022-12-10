@@ -7,14 +7,17 @@
   src: url('../fonts/Inter/Inter.ttf');
 }
 
-
 @font-face {
   font-family: 'IM-Fell';
   src: url('../fonts/IM_Fell_English/IMFellEnglish-Regular.ttf');
 }
 
+.header-container{
+  background-image: url('../blackboard.jpg');
+  height:9rem;
+}
 .nav-container{
-  background-color: #322D2D;
+  /* background-color: #322D2D; */
   height: 6rem;
   padding-top: 3rem;
   overflow: auto;
@@ -54,25 +57,87 @@ li{
   padding: 1rem;
 }
 
-.category-subtitle{
-  color: blue;
+
+/* Homepage Content*/
+.homepage-tagline{
+  font-family: 'IM-Fell';
+  text-align: center;
+  font-size: 2.6rem;
+  margin: 2rem 0;
+}
+
+.homepage-tagline-02{
+  font-family: 'Verdana';
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+
+}
+
+.homepage-recipes-btn-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.homepage-recipes-btn{
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  background-color:#779b3d;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.homepage-recipes-btn:hover{
+  cursor: pointer;
+  background-color:#607e30;
+  transition: ease-in, 0.2s;
 }
 
 /* All Recipes Recipe Card  */
+.all-recipe-cards-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  max-width: 90%;
+  margin: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
 .recipe-card-container{
-  width: 10rem;
+  width: 16rem;
   border: solid;
-  border-radius: 3px;
-  box-shadow: #322D2D;
+  border-radius: 2px;
+  border-color: rgb(220, 220, 220);
+  height: 24rem;
+  margin: 2rem 2rem;
+  box-shadow: 0 6px 10px #8080801c;
+  text-decoration: none;
+}
+
+.image-container{
+  height: 14rem;
+  width: 14rem;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 192, 104);
+  text-decoration: none;
 }
 
 .recipe-card-title{
   font-family: 'Inter';
-  font-size: 1.8rem;
-  margin-left:auto;
-  margin-right: auto;
+  font-size: 1.1rem;
+  margin: 1rem 1rem;
   text-align: center;
   margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.recipe-card-title:link{
+  text-decoration: none;
 }
 
 .recipe-card-intro{
@@ -84,6 +149,62 @@ li{
   margin-bottom: 1rem;
 }
 
+/* Recipe Page */
+.recipe-page-image{
+  margin-top: 5rem;
+  margin-left: 2rem;
+  width: 34rem;
+  padding-left: 2rem;
+}
+
+.recipe-page-title{
+  font-family: 'IM-Fell';
+  font-size: 2.4rem;
+  margin: 5rem 4rem 2rem 0rem;
+}
+
+.recipe-page-introduction{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin: 2rem 4rem 2rem 0rem;
+}
+
+.recipe-page-ingredients{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2rem;
+    list-style: none;
+    margin: 1rem 4rem 1rem 4rem;
+}
+
+.recipe-ingredients-title{
+  font-family: 'IM-Fell';
+  margin: 2rem 2rem 0 4rem;
+}
+
+.instructions-title{
+  margin: 3rem 2rem 1rem 0;
+  font-family: 'IM-Fell';
+  font-size: 1.8rem;
+}
+
+.recipe-instructions{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 4rem 2rem 0;
+}
+
+.row{
+  display: flex;
+}
+
+.column{
+  width: 50%;
+  float: left;
+}
 
 /* Admin Page */
 .admin-title{
@@ -101,13 +222,13 @@ li{
   display: flex;
   justify-content: center;
   padding: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .add-recipe-btn{
   text-decoration: none;
   font-family: 'Inter';
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #FFC876;
   padding: 1rem;
   width: 10rem;
@@ -131,7 +252,7 @@ li{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 4rem 0rem;
+  margin: 0 0rem 4rem 0;
 }
 
 .table-heading{
@@ -153,6 +274,10 @@ li{
 .table-recipe-container{
   background-color: rgb(255, 247, 237);
   padding-left: 2rem;
+}
+
+.table-recipe-title{
+  padding: 0 2rem;
 }
 
 .edit-btn{
@@ -183,13 +308,70 @@ li{
   text-align: center;
 }
 
+/* edit and create recipe pages */
+.edit-form-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.edit-page-field-label{
+  font-family: Verdana;
+  font-weight: 100;
+
+}
+
+
+/* Search Page  */
+.search-results-title{
+  color: rgb(0, 0, 0);
+  font-family: 'IM-Fell', Verdana;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+
+.search-bar-container{
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 2rem auto;
+}
+
+.search-bar{
+  width: 30%;
+  height: 3rem;
+  border-width: 2px;
+  border-color: gray;
+  border-radius: 3px;
+}
+
+.search-bar-submit-btn{
+  background-color: #779b3d;
+  border: none;
+  font-weight: "Inter", Verdana;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0 2rem;
+  border-radius: 3px;
+  margin: 0 0.5rem;
+}
+
+.search-bar-submit-btn:hover{
+  cursor: pointer;
+  background-color: #607e30;
+  transition: ease-in,0.2s;
+
+}
 
 /* footer */
 .footer-container{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 .footer-copyright-txt{

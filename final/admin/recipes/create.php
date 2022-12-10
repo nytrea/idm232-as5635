@@ -10,14 +10,18 @@ include_once __DIR__ . '/../../components/header.php';
 // get users data from database
 $query = 'SELECT * FROM recipes';
 $result = mysqli_query($db_connection, $query);
+?>
 
+<?php
+$site_title = 'Add A Recipe';
+$document_title = $page_title . ' | ' . $site_title; 
 ?>
 
 <div class="mx-auto my-16 max-w-7xl px-4">
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="create-recipe-title-container">
-        <h1 class="create-recipe-title">Create Recipe</h1>
+        <h1 class="create-recipe-title">Add A Recipe</h1>
       </div>
     </div>
     <div class="mt-8 flex flex-col">
@@ -31,14 +35,14 @@ $result = mysqli_query($db_connection, $query);
               </div>
 
               <div class="block">
-                <label for="">Introduction</label>
+                <label for="" >Introduction</label>
                 <input class="border-black border-2" type="text" name="introduction">
               </div>
 
 
               <div class="block">
                 <label for="">Ingredients</label>
-                <input class="border-black border-2" type="text" name="ingredients">
+                <textarea class="classic" name="ingredients" > </textarea> 
               </div>
               <div class="block">
                 <label for="">Instructions</label>
@@ -46,7 +50,7 @@ $result = mysqli_query($db_connection, $query);
               </div>
               <input
                 class="nline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
-                type="submit" value="submit">
+                type="submit" value="submit" class="edit-page-btn">
             </form>
           </div>
         </div>

@@ -18,7 +18,7 @@ $result = mysqli_query($db_connection, $query);
   <div class="px-4 sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center">
       <div class="sm:flex-auto">
-        <h1 class="create-recipe-title">Create Recipe</h1>
+        <h1 class="create-recipe-title">Add A Recipe</h1>
       </div>
     </div>
     <div class="mt-8 flex flex-col">

@@ -7,7 +7,7 @@
 function get_recipes()
 {
     global $db_connection;
-    $query = 'SELECT * FROM recipes ORDER BY title ASC';
+    $query = 'SELECT * FROM recipes ORDER BY recipe_title ASC';
     $result = mysqli_query($db_connection, $query);
     return $result;
 }

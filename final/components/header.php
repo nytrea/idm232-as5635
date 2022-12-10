@@ -15,7 +15,11 @@ $document_title = $page_title . ' | ' . $site_title;
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tiny.cloud/1/7rpnj47it93x8jhvzo8vbgdulo0j4qdj5xdmud6xc46gy8fb/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
   <link rel="stylesheet" href=" <?php echo site_url(); ?>/dist/styles/style.css">
+  <link rel="shortcut icon" href="dist/favicon.svg" type="image/x-icon"/>
+  
   <title><?php echo $document_title ; ?> </title>
 
 </head>
@@ -23,7 +27,7 @@ $document_title = $page_title . ' | ' . $site_title;
 <body>
  
     <!--Main Content Begins-->
-    <div class="header-container">
+    <div class="header-container" >
       <div class="nav-container">
         <div class="logo-container">
             <a href="<?php echo site_url(); ?>/index.php" class="logo"> Culinary </a>
